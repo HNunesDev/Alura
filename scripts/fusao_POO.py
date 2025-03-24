@@ -10,7 +10,6 @@ class Dados:
         self.nome_colunas = self.get_columns()
         self.qtd_linhas = self.size_data()
 
-
     def leitura_json(self):
         dados_json = []
         with open(self.path, 'r') as file:
@@ -67,7 +66,6 @@ class Dados:
         
         return Dados(combined_list, 'list')
 
-        
     def transformando_dados_tabela(self):
         
         dados_combinados_tabela = [self.nome_colunas]
